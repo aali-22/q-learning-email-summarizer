@@ -9,6 +9,8 @@ email library for parsing emails
 
 numpy library for numerical calculations
 
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
 The app can be used by running the script main.py and following the instructions.
 
 The repo includes the following files:
