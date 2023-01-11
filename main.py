@@ -28,6 +28,7 @@ emails_df = pd.DataFrame(columns=['subject', 'body', 'label'])
 
 # Add the new emails from the mailbox to the dataset
 for msg in messages:
+    #lld
     email = service.users().messages().get(userId='me', id=msg['id'], format='full').execute()
     headers = email['payload']['headers']
     subject = next(header['value'] for header in headers if header['name'] == 'Subject')
